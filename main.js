@@ -17,7 +17,7 @@ async function loremGen() {
             alert('Requird')
         } else {
             input.value = ''
-            let responce = await fetch("http://hipsum.co/api/?type=hipster-centric&sentences=3")
+            let responce = await fetch(`http://hipsum.co/api/?type=hipster-centric&paragraf=${input.value}`)
             content.style.display = 'block'
             let data = await responce.json()
             console.log(data);
