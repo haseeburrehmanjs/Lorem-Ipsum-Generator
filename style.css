@@ -5,10 +5,10 @@
 }
 
 :root {
-    --primary : #32012F; 
-    --secondry : #524C42; 
-    --light-grey : #E2DFD0; 
-    --orange : #F97300; 
+    --primary: #32012F;
+    --secondry: #524C42;
+    --light-grey: #E2DFD0;
+    --orange: #F97300;
 }
 
 #body {
@@ -33,7 +33,7 @@
     border-radius: 0;
 }
 
-#search{
+#search {
     width: 300px;
     height: 48px;
     padding: 10px;
@@ -44,4 +44,13 @@
     width: 100%;
     padding: 10px;
     display: none;
+}
+
+@media (max-width: 480px) {
+    .main-section {
+        position: absolute;
+        top: -10%;
+        left: 50%;
+        transform: translate(-50%,30%);
+    }
 }
